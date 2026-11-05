@@ -1,0 +1,67 @@
+{"strategy":
+ {"seeds": 21,
+  "profiles":
+  {"sum_to_product":
+   {"terminates_on_seeds": true,
+    "rules":
+    ["trigonometry.pythagorean",
+     "trigonometry.sum_to_product.sin_add_sin",
+     "trigonometry.sum_to_product.cos_add_cos",
+     "trigonometry.sum_to_product.cos_sub_cos",
+     "trigonometry.inverse.tan_arctan"],
+    "max_steps": 1},
+   "product_to_sum":
+   {"terminates_on_seeds": true,
+    "rules":
+    ["trigonometry.pythagorean",
+     "trigonometry.product_to_sum.sin_cos",
+     "trigonometry.product_to_sum.sin_sin",
+     "trigonometry.inverse.tan_arctan"],
+    "max_steps": 1},
+   "power_reduction":
+   {"terminates_on_seeds": true,
+    "rules":
+    ["trigonometry.pythagorean",
+     "trigonometry.power_reduction.sin_sq",
+     "trigonometry.power_reduction.cos_sq",
+     "trigonometry.inverse.tan_arctan"],
+    "max_steps": 1},
+   "default":
+   {"terminates_on_seeds": true,
+    "rules":
+    ["trigonometry.pythagorean",
+     "trigonometry.angle_sum.sin_add",
+     "trigonometry.angle_sum.cos_sub",
+     "trigonometry.double_angle.sin",
+     "trigonometry.double_angle.cos",
+     "trigonometry.inverse.tan_arctan"],
+    "max_steps": 3}},
+  "fuel": 64,
+  "engine":
+  "OSR.normalize (reference rewriter, proved sound: OSR.normalize_sound)"},
+ "osr_format": "1.0.0-alpha.1",
+ "metrics":
+ {"rules_with_findings": 8,
+  "rules_migrated": 13,
+  "rules_exported": 13,
+  "real":
+  {"unsupported": 0,
+   "unproved": 0,
+   "proved": 13,
+   "counterexample": 0,
+   "certified": 13,
+   "blocked_by_mapping_assurance": 0},
+  "julia_execution":
+  "not measured by the exporter; see OpenSymbolicRules.jl test/test_osr_v1.jl",
+  "complex":
+  {"unsupported": 0,
+   "unproved": 0,
+   "proved": 13,
+   "counterexample": 0,
+   "certified": 12,
+   "blocked_by_mapping_assurance": 1}},
+ "build":
+ {"source_digest":
+  "sha256:13f7a913cefe89361c83845e10a526b8e6fb9a8214ee8c43870c72f9dbcf04d3",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_toolchain": "leanprover/lean4:v4.35.0"}}

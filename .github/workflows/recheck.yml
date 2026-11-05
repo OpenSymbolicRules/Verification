@@ -1,0 +1,35 @@
+name: Recheck
+
+on:
+  workflow_dispatch:
+    inputs:
+      lean_ref:
+        description: OpenSymbolicRules/Lean commit or tag to rebuild
+        required: true
+      report:
+        description: Report directory, e.g. reports/<digest>
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: Verification
+      - uses: actions/checkout@v4
+        with:
+          repository: OpenSymbolicRules/Lean
+          ref: ${{ inputs.lean_ref }}
+          path: Lean
+      - name: Install elan and just
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          sudo apt-get update && sudo apt-get install -y just
+      - name: Recheck
+        working-directory: Verification
+        run: scripts/recheck.sh ../Lean "${{ inputs.report }}"
