@@ -22,6 +22,7 @@ audit, and requires every published file to be reproduced byte for byte.
 
 | Source digest | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
 |---|---|---|---|---|---|
+| `sha256:5ba7794ee165…` | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:6b9f920f9221…` | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:13f7a913cefe…` | 13/13 | 12/13 | 0/4 (tested only) | v4.35.0 | `56a00585` |
 
@@ -34,7 +35,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/6b9f920f9221af366e267b5d50f762204aa1624a62efa94c802c76fea3a10108
+just recheck ../Lean reports/5ba7794ee1652623a4fb6eb3d030147d3527b82dfa0043c70bd99aefecb6012a
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
