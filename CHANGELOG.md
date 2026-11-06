@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   ℂ 14/15 certified) and its conformance cases; reports are per rule set.
 - Report `f495f360…`: negative integer exponents; Algebra migrates 16 of 20
   rules (ℝ 16/16, ℂ 15/16 certified).
+- Report `0dd4fefa…`: integer exponents and integer conditions; Algebra
+  migrates all 20 rules (ℝ 20/20, ℂ 18/20 certified).
 
 ### Changed
 - `scripts/recheck.sh` reads the source digest from every `*report.json` of
