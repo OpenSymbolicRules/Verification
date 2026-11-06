@@ -23,6 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   certified in the boolean domain; 8 quantifier rules not migrated).
 - Report `7992c5b2…`: Logic quantifiers (OMBIND) with capture-free rule
   statements; 35 of 39 Logic rules.
+- Report `e320b583…`: adds the Calculus rule set (12 derivative and limit
+  rules; ℝ 12/12, ℂ 10/12 certified), rechecked on wulfenix.
 
 ### Changed
 - `scripts/recheck.sh` reads the source digest from every `*report.json` of

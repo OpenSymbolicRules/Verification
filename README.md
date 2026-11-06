@@ -13,7 +13,7 @@ audit, and requires every published file to be reproduced byte for byte.
 
 `reports/<sha256 source digest>/` holds, for one source state and each rule
 set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
-`306a1b65…` on):
+`306a1b65…` on, `calculus` from `e320b583…` on):
 
 | File | Content |
 |---|---|
@@ -24,6 +24,10 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 
 | Source digest | Rule set | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
 |---|---|---|---|---|---|---|
+| `sha256:e320b5833b74…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:e320b5833b74…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:e320b5833b74…` | Logic (35 of 39 migrated; domain 𝔹) | 35/35 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:e320b5833b74…` | Calculus (12 of 32 migrated) | 12/12 | 10/12 | one step | v4.35.0 | `56a00585` |
 | `sha256:7992c5b278b1…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:7992c5b278b1…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:7992c5b278b1…` | Logic (35 of 39 migrated; domain 𝔹) | 35/35 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
@@ -49,7 +53,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/7992c5b278b1af1117e2a36b3144a2221482abf8637b408d515ffea4c9cbf370
+just recheck ../Lean reports/e320b5833b7408f944c7d5c72411fddbaee2a02d4cbda009f124a180674903fe
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
