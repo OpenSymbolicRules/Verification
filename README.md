@@ -15,14 +15,15 @@ audit, and requires every published file to be reproduced byte for byte.
 
 | File | Content |
 |---|---|
-| `report.md`, `report.json` | Per-rule, per-domain status, metrics, strategy check |
+| `report.md`, `report.json` | Per-rule, per-domain status, metrics, termination proofs and strategy runs |
 | `trigonometry.osr.json` | The rule set |
 | `registry.json` | The OpenMath ↔ Lean semantic registry |
 | `conformance/trigonometry.cases.json` | Engine conformance cases |
 
-| Source digest | ℝ certified | ℂ certified | Lean | Mathlib |
-|---|---|---|---|---|
-| `sha256:13f7a913cefe…` | 13/13 | 12/13 | v4.35.0 | `56a00585` |
+| Source digest | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
+|---|---|---|---|---|---|
+| `sha256:6b9f920f9221…` | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:13f7a913cefe…` | 13/13 | 12/13 | 0/4 (tested only) | v4.35.0 | `56a00585` |
 
 ## Re-checking a report
 
@@ -33,7 +34,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/13f7a913cefe89361c83845e10a526b8e6fb9a8214ee8c43870c72f9dbcf04d3
+just recheck ../Lean reports/6b9f920f9221af366e267b5d50f762204aa1624a62efa94c802c76fea3a10108
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
