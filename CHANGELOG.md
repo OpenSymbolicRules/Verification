@@ -21,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   migrates all 20 rules (ℝ 20/20, ℂ 18/20 certified).
 - Report `306a1b65…`: adds the Logic rule set (31 propositional rules,
   certified in the boolean domain; 8 quantifier rules not migrated).
+- Report `7992c5b2…`: Logic quantifiers (OMBIND) with capture-free rule
+  statements; 35 of 39 Logic rules.
 
 ### Changed
 - `scripts/recheck.sh` reads the source digest from every `*report.json` of

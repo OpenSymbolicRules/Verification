@@ -1,0 +1,83 @@
+{"strategy":
+ {"seeds": 28,
+  "profiles":
+  {"factor_polynomials":
+   {"termination":
+    {"weight": "OSR.Algebra.factorWeight",
+     "theorem": "OSR.Algebra.factor_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Algebra.profileRules \"factor_polynomials\") OSR.Algebra.factorWeight",
+     "axioms": ["Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
+    "rules":
+    ["algebra.polynomial.factor_left_add",
+     "algebra.polynomial.factor_right_add",
+     "algebra.polynomial.factor_left_sub",
+     "algebra.polynomial.factor_right_sub",
+     "algebra.identity.add_zero",
+     "algebra.identity.zero_add",
+     "algebra.identity.mul_one",
+     "algebra.identity.one_mul",
+     "algebra.identity.mul_zero",
+     "algebra.identity.zero_mul"],
+    "max_steps": 3},
+   "default":
+   {"termination":
+    {"weight": "OSR.Algebra.defaultWeight",
+     "theorem": "OSR.Algebra.default_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Algebra.profileRules \"default\") OSR.Algebra.defaultWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
+    "rules":
+    ["algebra.power.pow_pow",
+     "algebra.power.mul_pow",
+     "algebra.power.one",
+     "algebra.power.zero",
+     "algebra.power.neg_one",
+     "algebra.power.one_pow",
+     "algebra.log.ln_mul",
+     "algebra.log.ln_pow",
+     "algebra.log.exp_ln",
+     "algebra.polynomial.distribute",
+     "algebra.identity.add_zero",
+     "algebra.identity.zero_add",
+     "algebra.identity.mul_one",
+     "algebra.identity.one_mul",
+     "algebra.identity.mul_zero",
+     "algebra.identity.zero_mul"],
+    "max_steps": 5}},
+  "fuel": 64,
+  "engine":
+  "OSR.normalize (reference rewriter, proved sound: OSR.normalize_sound)"},
+ "ruleset": "algebra",
+ "osr_format": "1.0.0-alpha.1",
+ "not_migrated": [],
+ "metrics":
+ {"rules_with_findings": 10,
+  "rules_not_migrated": 0,
+  "rules_migrated": 20,
+  "rules_exported": 20,
+  "real":
+  {"unsupported": 0,
+   "unproved": 0,
+   "proved": 20,
+   "counterexample": 0,
+   "certified": 20,
+   "blocked_by_mapping_assurance": 0},
+  "julia_execution":
+  "not measured by the exporter; see OpenSymbolicRules.jl test/test_osr_v1.jl",
+  "complex":
+  {"unsupported": 2,
+   "unproved": 0,
+   "proved": 18,
+   "counterexample": 0,
+   "certified": 18,
+   "blocked_by_mapping_assurance": 0}},
+ "build":
+ {"source_digest":
+  "sha256:7992c5b278b1af1117e2a36b3144a2221482abf8637b408d515ffea4c9cbf370",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_toolchain": "leanprover/lean4:v4.35.0"}}
