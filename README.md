@@ -23,6 +23,8 @@ set `<set>` (`trigonometry`, and `algebra` from `a6649bd5…` on):
 
 | Source digest | Rule set | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
 |---|---|---|---|---|---|---|
+| `sha256:f495f360d39a…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:f495f360d39a…` | Algebra (16 of 20 migrated) | 16/16 | 15/16 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:a6649bd5fb8c…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:a6649bd5fb8c…` | Algebra (15 of 20 migrated) | 15/15 | 14/15 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:5ba7794ee165…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
@@ -38,7 +40,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/a6649bd5fb8c68ee90cee2b4d1b287b0d2ae2dde2ce6332a80d8fbbe1afc9013
+just recheck ../Lean reports/f495f360d39aa36ba650dac16d4de50ec550a121c0d9bef3b7213112f4ee1cbf
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
