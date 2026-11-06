@@ -1,0 +1,92 @@
+{"strategy":
+ {"seeds": 23,
+  "profiles":
+  {"factor_polynomials":
+   {"termination":
+    {"weight": "OSR.Algebra.factorWeight",
+     "theorem": "OSR.Algebra.factor_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Algebra.profileRules \"factor_polynomials\") OSR.Algebra.factorWeight",
+     "axioms": ["Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
+    "rules":
+    ["algebra.polynomial.factor_left_add",
+     "algebra.polynomial.factor_right_add",
+     "algebra.polynomial.factor_left_sub",
+     "algebra.polynomial.factor_right_sub",
+     "algebra.identity.add_zero",
+     "algebra.identity.zero_add",
+     "algebra.identity.mul_one",
+     "algebra.identity.one_mul",
+     "algebra.identity.mul_zero",
+     "algebra.identity.zero_mul"],
+    "max_steps": 3},
+   "default":
+   {"termination":
+    {"weight": "OSR.Algebra.defaultWeight",
+     "theorem": "OSR.Algebra.default_terminates",
+     "status": "proved",
+     "statement":
+     "OSR.Terminates (OSR.Algebra.profileRules \"default\") OSR.Algebra.defaultWeight",
+     "axioms": ["Classical.choice", "Quot.sound", "propext"]},
+    "terminates_on_seeds": true,
+    "rules":
+    ["algebra.power.one",
+     "algebra.power.zero",
+     "algebra.log.ln_mul",
+     "algebra.log.exp_ln",
+     "algebra.polynomial.distribute",
+     "algebra.identity.add_zero",
+     "algebra.identity.zero_add",
+     "algebra.identity.mul_one",
+     "algebra.identity.one_mul",
+     "algebra.identity.mul_zero",
+     "algebra.identity.zero_mul"],
+    "max_steps": 5}},
+  "fuel": 64,
+  "engine":
+  "OSR.normalize (reference rewriter, proved sound: OSR.normalize_sound)"},
+ "ruleset": "algebra",
+ "osr_format": "1.0.0-alpha.1",
+ "not_migrated":
+ [{"reason":
+   "(x^p)^q = x^(p*q) with integer variables p, q: the fragment has no integer-valued variables or symbolic exponents",
+   "legacy_id": "algebra:1-powers/1.1-basic-exponents:1"},
+  {"reason":
+   "x^p * x^q = x^(p+q) with integer variables p, q: the fragment has no integer-valued variables or symbolic exponents",
+   "legacy_id": "algebra:1-powers/1.1-basic-exponents:2"},
+  {"reason": "x^(-1) = 1/x: the fragment only has natural-number exponents",
+   "legacy_id": "algebra:1-powers/1.1-basic-exponents:5"},
+  {"reason":
+   "1^x = 1 with a symbolic exponent: general arith1#power (exp(a ln x)) is outside the fragment",
+   "legacy_id": "algebra:1-powers/1.1-basic-exponents:6"},
+  {"reason":
+   "log(a^b) = b log(a) with a symbolic exponent: general arith1#power is outside the fragment",
+   "legacy_id": "algebra:2-logarithms/2.1-basic-logarithms:2"}],
+ "metrics":
+ {"rules_with_findings": 5,
+  "rules_not_migrated": 5,
+  "rules_migrated": 15,
+  "rules_exported": 15,
+  "real":
+  {"unsupported": 0,
+   "unproved": 0,
+   "proved": 15,
+   "counterexample": 0,
+   "certified": 15,
+   "blocked_by_mapping_assurance": 0},
+  "julia_execution":
+  "not measured by the exporter; see OpenSymbolicRules.jl test/test_osr_v1.jl",
+  "complex":
+  {"unsupported": 1,
+   "unproved": 0,
+   "proved": 14,
+   "counterexample": 0,
+   "certified": 14,
+   "blocked_by_mapping_assurance": 0}},
+ "build":
+ {"source_digest":
+  "sha256:a6649bd5fb8c68ee90cee2b4d1b287b0d2ae2dde2ce6332a80d8fbbe1afc9013",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_toolchain": "leanprover/lean4:v4.35.0"}}

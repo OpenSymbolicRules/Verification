@@ -13,8 +13,19 @@ set -euo pipefail
 lean=$(cd "$1" && pwd)
 report=$(cd "$2" && pwd)
 
-expected=$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1]))["build"]["source_digest"])' \
-  "$report/report.json")
+# Every report of the directory must record the same source digest
+# (`report.json` before rule sets had their own reports).
+expected=$(python3 - "$report" <<'PY'
+import glob, json, os, sys
+paths = sorted(glob.glob(os.path.join(sys.argv[1], "*report.json")))
+if not paths:
+    sys.exit("no report in " + sys.argv[1])
+digests = {json.load(open(p))["build"]["source_digest"] for p in paths}
+if len(digests) != 1:
+    sys.exit(f"reports disagree on the source digest: {sorted(digests)}")
+print(digests.pop())
+PY
+)
 actual="sha256:$(cd "$lean" && scripts/source-digest.sh)"
 if [ "$expected" != "$actual" ]; then
   echo "source digest mismatch: report $expected, checkout $actual" >&2

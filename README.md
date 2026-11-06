@@ -11,20 +11,23 @@ audit, and requires every published file to be reproduced byte for byte.
 
 ## Reports
 
-`reports/<sha256 source digest>/` holds, for one source state:
+`reports/<sha256 source digest>/` holds, for one source state and each rule
+set `<set>` (`trigonometry`, and `algebra` from `a6649bd5…` on):
 
 | File | Content |
 |---|---|
-| `report.md`, `report.json` | Per-rule, per-domain status, metrics, termination proofs and strategy runs |
-| `trigonometry.osr.json` | The rule set |
+| `<set>.report.md`, `<set>.report.json` | Per-rule, per-domain status, metrics, rules not migrated, termination proofs and strategy runs (`report.md`, `report.json` before `a6649bd5…`) |
+| `<set>.osr.json` | The rule set |
 | `registry.json` | The OpenMath ↔ Lean semantic registry |
-| `conformance/trigonometry.cases.json` | Engine conformance cases |
+| `conformance/<set>.cases.json` | Engine conformance cases |
 
-| Source digest | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
-|---|---|---|---|---|---|
-| `sha256:5ba7794ee165…` | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
-| `sha256:6b9f920f9221…` | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
-| `sha256:13f7a913cefe…` | 13/13 | 12/13 | 0/4 (tested only) | v4.35.0 | `56a00585` |
+| Source digest | Rule set | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
+|---|---|---|---|---|---|---|
+| `sha256:a6649bd5fb8c…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:a6649bd5fb8c…` | Algebra (15 of 20 migrated) | 15/15 | 14/15 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:5ba7794ee165…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:6b9f920f9221…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:13f7a913cefe…` | Trigonometry | 13/13 | 12/13 | 0/4 (tested only) | v4.35.0 | `56a00585` |
 
 ## Re-checking a report
 
@@ -35,7 +38,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/5ba7794ee1652623a4fb6eb3d030147d3527b82dfa0043c70bd99aefecb6012a
+just recheck ../Lean reports/a6649bd5fb8c68ee90cee2b4d1b287b0d2ae2dde2ce6332a80d8fbbe1afc9013
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
