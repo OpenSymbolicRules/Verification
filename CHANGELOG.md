@@ -29,6 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   26 of 32 rules (ℝ 25/26, ℂ 14/26 certified).
 - Report `afe0d4a7…`: the derivative of arctanh is proved; Calculus ℝ 26/26.
 - Report `c4653df4…`: FreeQ as independence constraints; all 39 Logic rules.
+- Report `2f26c426…`: FreeQ in Calculus (29 of 32 rules); the v0.1 power
+  rule is refuted (status `counterexample`).
 
 ### Changed
 - `scripts/recheck.sh` reads the source digest from every `*report.json` of
