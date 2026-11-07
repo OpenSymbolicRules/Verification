@@ -24,6 +24,10 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 
 | Source digest | Rule set | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
 |---|---|---|---|---|---|---|
+| `sha256:afe0d4a7805d…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:afe0d4a7805d…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:afe0d4a7805d…` | Logic (35 of 39 migrated; domain 𝔹) | 35/35 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:afe0d4a7805d…` | Calculus (26 of 32 migrated) | 26/26 | 14/26 | one step | v4.35.0 | `56a00585` |
 | `sha256:b7a7ddbeb3f6…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:b7a7ddbeb3f6…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:b7a7ddbeb3f6…` | Logic (35 of 39 migrated; domain 𝔹) | 35/35 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
@@ -57,7 +61,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/b7a7ddbeb3f65e4ecbc990a8a6fff15477eb4278c7b5bf248623f8c853787d18
+just recheck ../Lean reports/afe0d4a7805ddfdd0b6e9d2a2e9439867abad22ed540fe59bd2d345f5db9088e
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom

@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   rules; ℝ 12/12, ℂ 10/12 certified), rechecked on wulfenix.
 - Report `b7a7ddbe…`: the fragment gains further functions; Calculus migrates
   26 of 32 rules (ℝ 25/26, ℂ 14/26 certified).
+- Report `afe0d4a7…`: the derivative of arctanh is proved; Calculus ℝ 26/26.
 
 ### Changed
 - `scripts/recheck.sh` reads the source digest from every `*report.json` of
