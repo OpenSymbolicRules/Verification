@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `4032322e…`: diagnose the missing operand differentiability
+  premises of all three structural Calculus rules, backed by Lean witnesses.
+  Certification counts remain unchanged.
 - Verification report of the Trigonometry pilot (ℝ 13/13 certified, ℂ 12/13).
 - Report `6b9f920f…`: same rules and certification, plus audited termination
   proofs of the four Trigonometry profiles.
