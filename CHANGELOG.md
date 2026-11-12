@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `5c32f229…`: 25 more Integration rules: 72 rules, ℝ 21/72 and
+  ℂ 17/72 certified, 51 counterexamples.  The other rule sets and the
+  registry are unchanged apart from the source digest.
 - Report `a6036490…`: twelve more Integration rules with residual integrals:
   47 rules, ℝ 20/47 and ℂ 16/47 certified, 27 counterexamples.  The other
   rule sets and the registry are unchanged apart from the source digest.
