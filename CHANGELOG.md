@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `dfde2079…`: 46 more Integration rules: 118 rules, ℝ 22/118 and
+  ℂ 17/118 certified, 95 and 91 counterexamples.  The other rule sets and
+  the registry are unchanged apart from the source digest.
 - Report `5c32f229…`: 25 more Integration rules: 72 rules, ℝ 21/72 and
   ℂ 17/72 certified, 51 counterexamples.  The other rule sets and the
   registry are unchanged apart from the source digest.
