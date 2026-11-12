@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `4efb181a…`: the Integration rule set gains eleven RUBI rules with
+  residual integrals `int(λx. H)(x)` (Specification V1-E-002b): 24 rules,
+  ℝ 12/24 and ℂ 8/24 certified, 12 counterexamples.  The other rule sets and
+  the registry are unchanged apart from the source digest.
 - Report `be6f672a…`: the Integration rule set gains seven RUBI rules with
   `NeQ` conditions (13 of 20 inventory candidates; ℝ 5/13, ℂ 2/13 certified;
   8 counterexamples). The other rule sets and the registry are unchanged
