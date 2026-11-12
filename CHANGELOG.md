@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `be6f672a…`: the Integration rule set gains seven RUBI rules with
+  `NeQ` conditions (13 of 20 inventory candidates; ℝ 5/13, ℂ 2/13 certified;
+  8 counterexamples). The other rule sets and the registry are unchanged
+  apart from the source digest.
 - Report `68dfb6f0…`: adds the Integration rule set, the first RUBI rules
   stated as antiderivatives (`calculus1#int`, now in the registry): of the
   nine `FreeQ`-only inventory candidates, 2 are proved over ℝ (1 over ℂ),
