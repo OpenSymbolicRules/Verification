@@ -13,7 +13,7 @@ audit, and requires every published file to be reproduced byte for byte.
 
 `reports/<sha256 source digest>/` holds, for one source state and each rule
 set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
-`306a1b65…` on, `calculus` from `e320b583…` on):
+`306a1b65…` on, `calculus` from `e320b583…` on, `integration` from `68dfb6f0…` on):
 
 | File | Content |
 |---|---|
@@ -24,6 +24,11 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 
 | Source digest | Rule set | ℝ certified | ℂ certified | Profiles proved terminating | Lean | Mathlib |
 |---|---|---|---|---|---|---|
+| `sha256:68dfb6f0c742…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:68dfb6f0c742…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:68dfb6f0c742…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:68dfb6f0c742…` | Calculus (29 of 32; structural premises diagnosed) | 28/29 | 16/29 | one step | v4.35.0 | `56a00585` |
+| `sha256:68dfb6f0c742…` | Integration (6 of the 9 RUBI inventory candidates; 4 counterexamples) | 2/6 | 1/6 | one step | v4.35.0 | `56a00585` |
 | `sha256:4032322efc3d…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:4032322efc3d…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:4032322efc3d…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |

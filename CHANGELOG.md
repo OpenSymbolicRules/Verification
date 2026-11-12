@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `68dfb6f0…`: adds the Integration rule set, the first RUBI rules
+  stated as antiderivatives (`calculus1#int`, now in the registry): of the
+  nine `FreeQ`-only inventory candidates, 2 are proved over ℝ (1 over ℂ),
+  4 are refuted by Lean counterexamples and 3 are not migrated.  The four
+  other rule sets are unchanged apart from the source digest.
 - Report `4032322e…`: diagnose the missing operand differentiability
   premises of all three structural Calculus rules, backed by Lean witnesses.
   Certification counts remain unchanged.
