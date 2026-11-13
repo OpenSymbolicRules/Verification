@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `a8eff8f4…`: 123 Integration rules, including five further
+  RUBI 4.16.1 refutations over both ℝ and ℂ. Real totals: 22 proved,
+  100 refuted, one unproved; complex totals: 18 proved (17 certified),
+  96 refuted, nine unproved. Validation runs on the Converix M75Q worker
+  with Lean 4.35.0 and Mathlib `56a00585`.
 - Report `dfde2079…`: 46 more Integration rules: 118 rules, ℝ 22/118 and
   ℂ 17/118 certified, 95 and 91 counterexamples.  The other rule sets and
   the registry are unchanged apart from the source digest.
