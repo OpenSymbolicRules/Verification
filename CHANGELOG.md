@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `dcad68f4…`: the calculus rewriter decides closed conditions
+  exactly (`OSR.Cond.decide?`); five new Integration conformance cases
+  exercise it.  Rules, certification and the registry are unchanged apart
+  from the source digest.
 - Report `a8eff8f4…`: 123 Integration rules, including five further
   RUBI 4.16.1 refutations over both ℝ and ℂ. Real totals: 22 proved,
   100 refuted, one unproved; complex totals: 18 proved (17 certified),
