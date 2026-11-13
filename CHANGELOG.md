@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `0a34c711…`: Integration audits 171 rules; two logarithmic
+  rules are proved over ℝ (unproved over ℂ). The other rule sets are
+  unchanged apart from the source digest.
 - Report `9705f0ef…`: Integration audits 169 rules; four backlog rules
   are proved over ℝ and ℂ (certified over ℝ). The other rule sets are
   unchanged apart from the source digest.
