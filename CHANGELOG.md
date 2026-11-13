@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `577cca61…`: Integration audits 156 rules. Five recursive binomial
+  rules are proved over ℝ and ℂ (certified over ℝ), and 28 more are refuted
+  in both domains. The other rule sets are unchanged apart from the source
+  digest.
 - Report `dcad68f4…`: the calculus rewriter decides closed conditions
   exactly (`OSR.Cond.decide?`); five new Integration conformance cases
   exercise it.  Rules, certification and the registry are unchanged apart
