@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `64f0e4b1…`: Integration audits 180 rules; 1.2.1.1 #7 and
+  1.2.1.2 #11 are proved over ℝ and ℂ. The other rule sets are unchanged
+  apart from the source digest.
 - Report `a956c4cc…`: Integration audits 178 rules; 4.1.12 #53 and #54
   are refuted over ℝ and ℂ (division by `b` at `b = 0`). The other rule sets
   are unchanged apart from the source digest.
