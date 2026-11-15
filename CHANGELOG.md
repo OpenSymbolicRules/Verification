@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `322b4cca…`: Integration audits 314 rules. 4.7.7 #34 and #35 are
+  proved and certified over ℝ and ℂ; 1.2.1.2 #54 and #59 are refuted in
+  both domains at `d = b = 0`. The other rule sets are unchanged apart from
+  the source digest.
 - Report `d5681743…`: Integration audits 310 rules. 4.7.9 #9, #10 and
   4.7.7 #26, #27 are proved over ℝ and ℂ (certified over ℝ), and 4.7.7 #32
   is refuted in both domains at `x = π`. The other rule sets are unchanged
