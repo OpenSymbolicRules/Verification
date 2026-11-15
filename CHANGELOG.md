@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `b96dae79…`: Integration audits 303 rules; seven rewritings into a
+  residual integral are proved over ℝ and ℂ (six certified over ℂ). The other
+  rule sets are unchanged apart from the source digest.
 - Report `22741da9…`: Integration audits 296 rules; 1.1.3.2 #68 is proved
   over ℝ and ℂ. The other rule sets are unchanged apart from the source
   digest.
