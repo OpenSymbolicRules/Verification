@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `4e719fca…`: six Integration rules with `log` refuted over ℂ at the
+  branch cut of the principal logarithm; 7 complex statements remain
+  unproved.
 - Report `f3212525…`: eight one-domain refutations of the Integration audit
   carried to the other domain (3.1.5 #33 over ℝ; 3.4 #9, 4.7.6 #2, 1.2.2.2
   #19, 3.5 #14, #17, #22, #23 over ℂ); no real statement is left unproved.
