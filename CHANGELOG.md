@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `c6220e09…`: Integration audits 295 rules; 1.1.1.2 #4 is proved
+  (certified over ℝ and ℂ), 3.2.1 #7 and 4.7.8 #47, #48 are refuted. The other
+  rule sets are unchanged apart from the source digest.
 - Report `0a089a2f…`: the registry gains `relation1#eq`, so every rule set's
   report changes digest; Integration audits 291 rules, 108 of them with `EqQ`
   conditions, refuted over ℝ (102 also over ℂ).
