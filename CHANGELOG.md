@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `e85967a3…`: Integration audits 373 rules; 1.2.4.1 #1 and 1.2.4.2 #1
+  proved and certified over ℝ and ℂ.
 - Report `6f5b2f4d…`: 27 RUBI rules whose integrand is nowhere defined in the
   fragment (half-integer exponents) reported as not migrated (41 in all).
 - Report `f8703dd9…`: Integration audits 371 rules; 12 more refuted in both
