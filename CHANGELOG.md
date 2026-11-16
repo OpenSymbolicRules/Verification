@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `aba1d4f5…`: Integration audits 359 rules; 39 more RUBI rules from a
+  wider inventory pass are refuted (38 in both domains).
 - Report `9caf6485…`: 3.2.3 #5 refuted over ℂ; no Integration statement is
   left unproved in either domain.
 - Report `e0a3499e…`: six by-parts Integration rules refuted over ℂ at the
