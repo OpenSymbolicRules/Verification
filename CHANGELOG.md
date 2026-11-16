@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `204e6b72…`: Integration distributes 534 rules; 120 strengthened variants
+  are unproved, checked numerically over ℝ, and three more (1.2.1.2 #1, 1.2.1.3
+  #19 and #20) are proved and certified over ℝ and ℂ.
 - Report `0f686088…`: Integration audits 411 rules; the first strengthened
   variants of rules with residual integrals (1.2.1.2 #20, #103, #104) are
   proved and certified over ℝ and ℂ.
