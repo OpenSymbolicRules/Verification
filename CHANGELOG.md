@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `0f686088…`: Integration audits 411 rules; the first strengthened
+  variants of rules with residual integrals (1.2.1.2 #20, #103, #104) are
+  proved and certified over ℝ and ℂ.
 - Report `37b59f6e…`: Integration audits 408 rules; the strengthened variant of
   1.2.1.3 #24 is proved and certified over ℝ and ℂ.
 - Report `fd5059b9…`: Integration audits 407 rules; strengthened variants of
