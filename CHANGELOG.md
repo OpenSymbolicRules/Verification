@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `9caf6485…`: 3.2.3 #5 refuted over ℂ; no Integration statement is
+  left unproved in either domain.
 - Report `e0a3499e…`: six by-parts Integration rules refuted over ℂ at the
   branch cut of `log`; one complex statement (3.2.3 #5) remains unproved.
 - Report `4e719fca…`: six Integration rules with `log` refuted over ℂ at the
