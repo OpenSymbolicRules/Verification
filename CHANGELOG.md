@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `301d2a1c…`: Integration audits 405 rules; strengthened variants of
+  1.2.1.3 #13 and 1.1.1.7 #6 proved and certified over ℝ and ℂ.
 - Report `75895afd…`: Integration audits 403 rules; strengthened variants of
   1.2.3.5 #2 and 1.2.1.3 #14 proved and certified over ℝ and ℂ.
 - Report `86e9259d…`: Integration audits 401 rules; strengthened variants of
