@@ -354,6 +354,11 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 | `sha256:2b296f3e8bdf…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
 | `sha256:2b296f3e8bdf…` | Calculus (29 of 32; structural premises diagnosed) | 28/29 | 16/29 | one step | v4.35.0 | `56a00585` |
 | `sha256:2b296f3e8bdf…` | Integration (523 rules; 106 strengthened variants proved, 36 checked numerically) | 177/523 | 92/523 | one step | v4.35.0 | `56a00585` |
+| `sha256:c859ec26dc25…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:c859ec26dc25…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:c859ec26dc25…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:c859ec26dc25…` | Calculus (29 of 32; structural premises diagnosed) | 28/29 | 16/29 | one step | v4.35.0 | `56a00585` |
+| `sha256:c859ec26dc25…` | Integration (523 rules; 108 strengthened variants proved, 34 checked numerically) | 179/523 | 92/523 | one step | v4.35.0 | `56a00585` |
 | `sha256:a8eff8f40f45…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:a8eff8f40f45…` | Algebra (all 20 migrated) | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:a8eff8f40f45…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
@@ -443,7 +448,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/2b296f3e8bdf590cc248d65f76c9525865298083321a87ba8bdc832b1edbdd04
+just recheck ../Lean reports/c859ec26dc252643ec449c9b4600881808f096c677dda7774696d4703d85ca71
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
