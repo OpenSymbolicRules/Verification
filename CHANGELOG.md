@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `83ab90fe…`: fifteen variants sampled with their equalities solved are
+  added and proved over ℝ and ℂ; 565 rules.
 - Report `2f2be88e…`: eight variants corrected after the pole probe are added
   and proved, one over ℝ and ℂ and seven over ℝ only; 550 rules.
 - Report `76ee6db2…`: strengthened variants of nineteen refuted named rules are
