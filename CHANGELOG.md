@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `2b296f3e…`: three tangent variants first checked numerically
+  (4.7.9 #16, #27, #30) are proved, certified over ℝ; 36 remain unproved.
 - Report `43563e7c…`: six logarithmic variants first checked numerically
   (3.1.4 #9, #17, #18 and 3.1.5 #13, #16, #17) are proved, certified over ℝ;
   39 remain unproved.
