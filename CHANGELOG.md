@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `3bcfa359…`: eight variants excluding a zero of their numerical check
+  are added and proved, one over ℝ and ℂ and seven over ℝ only; 581 rules.
 - Report `be9100af…`: eight more variants sampled with their equalities solved
   are added and proved, four over ℝ and ℂ and four over ℝ only; 573 rules.
 - Report `83ab90fe…`: fifteen variants sampled with their equalities solved are
