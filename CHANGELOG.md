@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `46cb2cdc…`: four variants first checked numerically (1.1.3.4 #17,
+  1.2.1.3 #35, 1.2.2.4 #11 and #12) are proved and certified; 101 remain unproved.
 - Report `226324e3…`: 11 unproved variants refuted by a pole probe are withdrawn
   (523 rules, 105 unproved); the variant of 1.1.3.4 #24 is proved and certified.
 - Report `e58b9271…`: three variants first checked numerically (1.2.2.3 #7, #8,
