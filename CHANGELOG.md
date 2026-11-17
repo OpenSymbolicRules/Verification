@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `2c8aebbb…`: the variant of `log_power_over_linear_square`, first
+  checked numerically, is proved and certified over ℝ; its complex domain
+  stays unproved. 26 variants remain unproved.
 - Report `45206732…`: 3.1.4 #2 and 3.1.5 #3, first checked numerically, are
   proved and certified over ℝ; their complex domain stays unproved. 27
   variants remain unproved.
