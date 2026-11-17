@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `59e5b849…`: six variants with tighter exponent bounds or more
+  nonzero conditions are added and proved, five over ℝ and ℂ and one over ℝ
+  only; 587 rules.
 - Report `3bcfa359…`: eight variants excluding a zero of their numerical check
   are added and proved, one over ℝ and ℂ and seven over ℝ only; 581 rules.
 - Report `be9100af…`: eight more variants sampled with their equalities solved
