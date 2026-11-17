@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `b402cc1a…`: ten 4.1.13 variants first checked numerically are
+  proved (#1 and #2 certified over ℝ and ℂ, the others over ℝ); 49 remain
+  unproved.
 - Report `6430a1e2…`: eight trigonometric variants first checked numerically
   (4.7.9 #1, #2, #25, #26 and 4.7.6 #1, #2, #16, #17) are proved, certified
   over ℝ; 59 remain unproved.
