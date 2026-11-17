@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `226324e3…`: 11 unproved variants refuted by a pole probe are withdrawn
+  (523 rules, 105 unproved); the variant of 1.1.3.4 #24 is proved and certified.
 - Report `e58b9271…`: three variants first checked numerically (1.2.2.3 #7, #8,
   1.1.3.3 #15) are proved and certified over ℝ and ℂ; 117 remain unproved.
 - Report `204e6b72…`: Integration distributes 534 rules; 120 strengthened variants
