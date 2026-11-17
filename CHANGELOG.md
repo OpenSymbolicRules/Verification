@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `be992810…`: seven more variants (1.3.1 #4, 1.3.2 #1 and five
+  2.3 exponential rules) are added and proved over ℝ and ℂ; 594 rules.
 - Report `59e5b849…`: six variants with tighter exponent bounds or more
   nonzero conditions are added and proved, five over ℝ and ℂ and one over ℝ
   only; 587 rules.
