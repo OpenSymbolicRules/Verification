@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `45206732…`: 3.1.4 #2 and 3.1.5 #3, first checked numerically, are
+  proved and certified over ℝ; their complex domain stays unproved. 27
+  variants remain unproved.
 - Report `7ef66d2f…`: 3.1.4 #12 and 3.1.5 #8, first checked numerically, are
   proved and certified over ℝ; their complex domain stays unproved. 29
   variants remain unproved.
