@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `4399c47e…`: 4.7.9 #11 and #12 and 2.3 #32 and #33, first checked
+  numerically, are proved (2.3 #32 and #33 certified over ℝ and ℂ); 45 remain
+  unproved.
 - Report `b402cc1a…`: ten 4.1.13 variants first checked numerically are
   proved (#1 and #2 certified over ℝ and ℂ, the others over ℝ); 49 remain
   unproved.
