@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `f4757237…`: the last twelve variants first checked numerically are
+  proved, seven over ℝ and ℂ and five over ℝ only; none remains unproved over ℝ.
+  The variant of 3.3 #22 now also appends `n ≠ 0`.
 - Report `66207331…`: 2.1 #9 and #10, first checked numerically, are proved over
   ℝ and ℂ, certified over ℝ; 12 variants remain unproved.
 - Report `e2341d4f…`: 1.2.3.1 #5, first checked numerically, is proved over ℝ
