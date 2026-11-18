@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `37faa87a…`: nine RUBI rules not considered before (1.2.1.2
+  #93–95, 1.2.3.3 #41/#42/#47, 1.2.3.4 #92/#93/#100) are migrated and proved
+  over ℝ and ℂ; 603 rules.
 - Report `be992810…`: seven more variants (1.3.1 #4, 1.3.2 #1 and five
   2.3 exponential rules) are added and proved over ℝ and ℂ; 594 rules.
 - Report `59e5b849…`: six variants with tighter exponent bounds or more
