@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `bba020e2…`: two arctanh splits into logarithms are migrated
+  and proved over ℝ; 906 rules.
 - Report `cf523cae…`: six more RUBI rules over square roots are migrated
   and proved over ℝ; 904 rules.
 - Report `d9ebd02b…`: five more RUBI rules are migrated and proved over
