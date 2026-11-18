@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `5ea2f5e8…`: the nine rules migrated in `37faa87a…` gain the
+  `independence:` finding the Integration faithfulness check requires.
 - Report `37faa87a…`: nine RUBI rules not considered before (1.2.1.2
   #93–95, 1.2.3.3 #41/#42/#47, 1.2.3.4 #92/#93/#100) are migrated and proved
   over ℝ and ℂ; 603 rules.
