@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `046abffd…`: 24 RUBI rules written with `E^u` are migrated
+  (14 proved, 10 refuted); 1099 rules.
 - Report `091039ab…`: 279 more RUBI rules are reported as not
   migrated (320 in all) and one more is refuted; 1075 rules.
 - Report `cea7b8c1…`: 40 more RUBI rules are migrated and
