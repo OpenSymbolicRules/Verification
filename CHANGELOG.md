@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `0c1101a8…`: 48 more RUBI rules are migrated and proved
+  over ℝ, eight over ℂ too; 968 rules.
 - Report `d285fa25…`: six RUBI splits with a shifted exponent are
   migrated and proved over ℝ; 920 rules.
 - Report `7f700cf4…`: eight more RUBI linear splits are migrated and
