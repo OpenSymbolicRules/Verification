@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `3a175e77…`: 65 more RUBI rules (with `Acoth` and `Acot`)
+  are refuted and eight duplicate entries removed; 1574 rules.
 - Report `1808a90b…`: 11 more RUBI rules are proved (linear
   splits); 1517 rules.
 - Report `6d698eb6…`: 12 more RUBI rules (with `Acoth`) are refuted
