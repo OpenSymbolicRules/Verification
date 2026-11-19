@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `eea66e08…`: four more RUBI rules are migrated, three
+  refuted and one proved; 1001 rules.
 - Report `0caffa06…`: eight more RUBI rules are migrated, five
   proved and three refuted; 997 rules.
 - Report `e79b3e32…`: 21 more RUBI rules are migrated, 19 proved
