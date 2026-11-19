@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `6d698eb6…`: 12 more RUBI rules (with `Acoth`) are refuted
+  and 200 more are reported as not migrated; 1506 rules.
 - Report `0fcb0e06…`: 114 more RUBI rules are refuted (trig signs
   decided at a point); 1494 rules.
 - Report `47ab2cab…`: 185 more RUBI rules (written with inert trig
