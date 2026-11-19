@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `47ab2cab…`: 185 more RUBI rules (written with inert trig
+  functions) are refuted; 1380 rules.
 - Report `39e18436…`: five more RUBI rules are proved over ℝ
   and ℂ; 1195 rules.
 - Report `8bdb4536…`: 91 more RUBI rules (89 written with `Simp`)
