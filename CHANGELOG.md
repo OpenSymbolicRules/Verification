@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `0300f840…`: residual integrals at a substitution;
+  275 RUBI rules with `Subst` are refuted; 2048 rules.
 - Report `3067be61…`: 54 more RUBI rules (compound conditions in
   conjunctive normal form) are refuted; 1773 rules.
 - Report `8fd3f445…`: 33 RUBI rules with `Or` conditions are
