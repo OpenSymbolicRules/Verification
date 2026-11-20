@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `092c7818…`: 184 more strengthened variants (788 in
+  all) are distributed unproved, checked exactly; 2836 rules.
 - Report `892bbf86…`: 604 strengthened variants checked
   numerically are distributed unproved; 2652 rules.
 - Report `71235dd0…`: conditions on derivative rules; the
