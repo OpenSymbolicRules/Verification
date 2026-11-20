@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `71235dd0…`: conditions on derivative rules; the
+  strengthened power rule `calculus.derivative.power_nonzero` is proved.
 - Report `0300f840…`: residual integrals at a substitution;
   275 RUBI rules with `Subst` are refuted; 2048 rules.
 - Report `3067be61…`: 54 more RUBI rules (compound conditions in
