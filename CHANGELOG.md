@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `45f886b8…`: four more strengthened Integration variants are
+  proved over ℝ and ℂ; 2875 rules, of which 823 remain unproved over ℝ.
 - Report `38e58e7c…`: 39 more strengthened variants (827 in all) are
   distributed unproved after exact checks; 2875 rules.
 - Report `092c7818…`: 184 more strengthened variants (788 in
