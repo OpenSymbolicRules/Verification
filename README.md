@@ -664,6 +664,11 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 | `sha256:092c78184504…` | Logic (all 39 migrated; domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
 | `sha256:092c78184504…` | Calculus (29 of 32 and the strengthened power rule; structural premises diagnosed) | 29/30 | 17/30 | one step | v4.35.0 | `56a00585` |
 | `sha256:092c78184504…` | Integration (2836 rules; 164 strengthened variants proved, 49 more over ℝ only, 788 unproved) | 474/2836 | 146/2836 | one step | v4.35.0 | `56a00585` |
+| `sha256:545316d739ac…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:545316d739ac…` | Algebra | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:545316d739ac…` | Logic (domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:545316d739ac…` | Calculus | 29/30 | 17/30 | one step | v4.35.0 | `56a00585` |
+| `sha256:545316d739ac…` | Integration (2875 rules; 819 unproved over ℝ) | 482/2875 | 152/2875 | one step | v4.35.0 | `56a00585` |
 | `sha256:5443a884d5fc…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:5443a884d5fc…` | Algebra | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:5443a884d5fc…` | Logic (domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
