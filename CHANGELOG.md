@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `36b2732a…`: Integration rule 1.1.3.4 #15 is proved over ℝ
+  and ℂ; 821 rules remain unproved over ℝ.
 - Report `c707d4e1…`: recursive Integration rule 1.1.1.3 #19 is proved
   over ℝ and ℂ; 822 rules remain unproved over ℝ.
 - Report `45f886b8…`: four more strengthened Integration variants are
