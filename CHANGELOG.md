@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `ded3200b…`: strengthened integration substitution rule 3.1.2 #7 is
+  proved and certified over ℝ and ℂ.
 - Report `16fbcf98…`: strengthened integration rule 3.1.2 #2 is refuted over
   ℂ at the principal logarithm's branch cut, with its real proof retained.
 - Report `57aac641…`: strengthened integration rule 3.1.2 #2 is proved over
