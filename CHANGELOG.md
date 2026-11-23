@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `57aac641…`: strengthened integration rule 3.1.2 #2 is proved over
+  ℝ, including the substitution; its complex case remains unproved.
 - Report `4e6b4e27…`: an independently proved order-free generalization of
   integration rule 1.1.3.4 #16 is certified over ℝ and ℂ; the original remains.
 - Report `4da74784…`: an independently proved order-free generalization of
