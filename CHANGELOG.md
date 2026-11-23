@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `4da74784…`: an independently proved order-free generalization of
+  integration rule 1.1.3.4 #27 is certified over ℝ and ℂ; the original remains.
 - Report `8ab03171…`: an independently proved order-free generalization of
   integration rule 1.1.3.4 #29 is certified over ℝ and ℂ; the original remains.
 - Report `45bd9d80…`: an independently proved order-free generalization of
