@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `503ac29d…`: eight strengthened trigonometric,
+  inverse-trigonometric and hyperbolic primitives receive real proofs;
+  five also receive complex proofs.
 - Prepare report `e6a1bb73…`: the strengthened RUBI 4.1.1.1 #6 sine
   primitive is proved over ℝ and ℂ under `d ≠ 0`.
 - Prepare report `7bf0b2e9…`: the strengthened RUBI 4.1.1.1 #11 sine-square
