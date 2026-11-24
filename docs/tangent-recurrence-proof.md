@@ -26,3 +26,10 @@ adds three certified real proofs for strengthened RUBI 4.3.2.1 #7, #8 and
 uncertified due to the unsupported complex order mapping. Rule #19 explicitly
 checks both residual integrands and the denominator requirements. The
 original unguarded rules remain refuted.
+
+Report `bdada8ffbd8970793bbdc79d7507bd56d0b0c4c8e3aa615ea9ba32b7ca70541a`
+adds four certified real proofs for strengthened RUBI 4.3.2.1 #20–21 and
+4.3.3.1 #4–5. Their complex theorems compile but are not certified because
+complex order mapping is unsupported. Negative exponents use a nonzero base
+derived from integrand definedness; nonnegative exponents also cover a zero
+base. Original unguarded rules remain refuted.

@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `bdada8ff…`: four tangent recurrences proved over both
+  interpreted domains, with complex order mappings unsupported.
 - Prepare report `bde33f43…`: three tangent product recurrences proved over
   both interpreted domains, with two complex order mappings unsupported.
 - Prepare report `b49e0c13…`: three additional tangent rules proved over
