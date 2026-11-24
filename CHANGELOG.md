@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `d3ff86ce…`: RUBI 1.1.1.2 #21 is proved and certified over ℝ
+  under its original conditions; its complex status is unproved.
 - Report `659662bb…`: RUBI 5.3.7 #19 is migrated with a Lean-checked real
   counterexample; its complex status is unproved.
 - Report `ded3200b…`: strengthened integration substitution rule 3.1.2 #7 is

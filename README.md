@@ -704,6 +704,11 @@ set `<set>` (`trigonometry`, `algebra` from `a6649bd5…` on, `logic` from
 | `sha256:659662bbba3f…` | Logic (domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
 | `sha256:659662bbba3f…` | Calculus | 29/30 | 17/30 | one step | v4.35.0 | `56a00585` |
 | `sha256:659662bbba3f…` | Integration (2880 rules; one more real counterexample) | 490/2880 | 157/2880 | one step | v4.35.0 | `56a00585` |
+| `sha256:d3ff86cef805…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
+| `sha256:d3ff86cef805…` | Algebra | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
+| `sha256:d3ff86cef805…` | Logic (domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
+| `sha256:d3ff86cef805…` | Calculus | 29/30 | 17/30 | one step | v4.35.0 | `56a00585` |
+| `sha256:d3ff86cef805…` | Integration (2881 rules; one more real proof) | 491/2881 | 157/2881 | one step | v4.35.0 | `56a00585` |
 | `sha256:69091961ec94…` | Trigonometry | 13/13 | 12/13 | 4/4 | v4.35.0 | `56a00585` |
 | `sha256:69091961ec94…` | Algebra | 20/20 | 18/20 | 2/2 | v4.35.0 | `56a00585` |
 | `sha256:69091961ec94…` | Logic (domain 𝔹) | 39/39 in 𝔹 | — | 3/3 | v4.35.0 | `56a00585` |
