@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Correct the source-version description for the RUBI 2.3 #1 witness: the
+  pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
+
 ### Added
+- Report `f6aa232d…`: rebuild the exponential counterexample with the
+  corrected pinned source-version description.
 - Report `cf1481f2…`: RUBI 2.3 #1 is migrated with a Lean-checked real
   counterexample in the integer-power fragment; its complex status is unproved.
 - Report `44c78f0d…`: RUBI 7.3.7 #19 is migrated with a Lean-checked real

@@ -1,8 +1,10 @@
 # RUBI 2.3 #1: zero denominator
 
-Report `cf1481f2c57257ddbbfe4500fb6adedb7f49b7663df5a5519c1941ee305a1b6b`
-contains `integration.rubi_2_3_r1`, transcribed from RUBI 4.16.1 with its
-original `FreeQ` independence constraint. At `F=2`, `a=b=0`, `c=n=1`, the
+Report `f6aa232dc43852d8a2337aff7162c39e4fee857b5751dba3044a11c89a5e5bec`
+contains `integration.rubi_2_3_r1`, transcribed from the pinned RUBI source with its
+original `FreeQ` independence constraint. The pinned source revision
+`61e9c18` declares version 4.17.3.0 in `PacletInfo.m`; the v0.1 per-rule
+4.16.1 label is historical and has not been independently verified. At `F=2`, `a=b=0`, `c=n=1`, the
 integrand is defined on the entire real line, while the replacement contains
 the inverse of the zero denominator `b*c*n*log(F)`.
 
