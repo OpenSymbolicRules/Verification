@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Report `cf1481f2…`: RUBI 2.3 #1 is migrated with a Lean-checked real
+  counterexample in the integer-power fragment; its complex status is unproved.
 - Report `44c78f0d…`: RUBI 7.3.7 #19 is migrated with a Lean-checked real
   counterexample; its complex status is unproved.
 - Report `d3ff86ce…`: RUBI 1.1.1.2 #21 is proved and certified over ℝ
