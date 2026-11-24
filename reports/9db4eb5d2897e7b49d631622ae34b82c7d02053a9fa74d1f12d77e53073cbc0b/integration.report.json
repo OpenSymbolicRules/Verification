@@ -1,0 +1,2038 @@
+{"strategy":
+ {"termination":
+  {"theorem": "OSR.Calculus.rewrite_result",
+   "status": "proved",
+   "statement":
+   "no rule applies to the result of a rule: normalization takes at most one step"},
+  "seeds": 5777,
+  "engine":
+  "OSR.Calculus.rewrite (root rewriting; proved sound: OSR.Calculus.apply?_sound)"},
+ "ruleset": "integration",
+ "osr_format": "1.0.0-alpha.1",
+ "not_migrated":
+ [{"reason":
+   "the integrand raises a + c x^2 to the exponent 3/2; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:10"},
+  {"reason":
+   "the integrand raises a + b x + c x^2 to the exponent 3/2; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.1 (a+b x+c x^2)^p:6"},
+  {"reason":
+   "the integrand raises a + b x + c x^2 to the exponent 3/2; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:9"},
+  {"reason":
+   "the integrand F^(c (a + b x)) sin(d + e x) is a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:1"},
+  {"reason":
+   "the integrand F^(c (a + b x)) cos(d + e x) is a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:2"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.2 (c+d x)^m (F^(g (e+f x)))^n (a+b (F^(g (e+f x)))^n)^p:2"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:25"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:34"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:43"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:59"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:60"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:73"},
+  {"reason":
+   "RUBI's condition IGtQ[Add[m, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:5"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:6"},
+  {"reason":
+   "RUBI's condition ILtQ[Add[m, Multiply[3, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:7"},
+  {"reason":
+   "RUBI's condition IGtQ[Add[m, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:18"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.4 (a+b x)^m (c+d x)^n (e+f x)^p (g+h x)^q:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.4 (a+b x)^m (c+d x)^n (e+f x)^p (g+h x)^q:31"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.8 P(x) (c x)^m (a+b x^n)^p:1"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.8 P(x) (c x)^m (a+b x^n)^p:2"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:78"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:79"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:84"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:85"},
+  {"reason":
+   "RUBI's condition IntegerQ[Add[p, Multiply[-1, 1, Power[2, -1]]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.1 (a+b x^2+c x^4)^p:1"},
+  {"reason":
+   "RUBI's condition IGtQ[Add[p, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:32"},
+  {"reason":
+   "RUBI's condition IGtQ[Add[p, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:33"},
+  {"reason":
+   "RUBI's condition ILtQ[Add[p, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:37"},
+  {"reason":
+   "RUBI's condition ILtQ[Add[p, Multiply[1, Power[2, -1]]], 0] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:38"},
+  {"reason":
+   "RUBI's condition IntegerQ[Add[p, Multiply[1, Power[2, -1]]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.8 P(x) (d+e x)^q (a+b x^2+c x^4)^p:5"},
+  {"reason":
+   "RUBI's condition IntegerQ[Add[p, Multiply[1, Power[2, -1]]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.8 P(x) (d+e x)^q (a+b x^2+c x^4)^p:6"},
+  {"reason":
+   "RUBI's condition EqQ[q, Multiply[n, Power[2, -1]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.6 P(x) (d x)^m (a+b x^n+c x^(2 n))^p:9"},
+  {"reason":
+   "RUBI's condition EqQ[q, Multiply[n, Power[2, -1]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.6 P(x) (d x)^m (a+b x^n+c x^(2 n))^p:10"},
+  {"reason":
+   "RUBI's condition EqQ[m, Multiply[3, Add[n, Multiply[-1, 1]], Power[2, -1]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.4 Improper/1.2.4.2 (d x)^m (a x^q+b x^n+c x^(2 n-q))^p:5"},
+  {"reason":
+   "RUBI's condition EqQ[m, Multiply[Add[Multiply[3, n], Multiply[-1, 1]], Power[2, -1]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.4 Improper/1.2.4.2 (d x)^m (a x^q+b x^n+c x^(2 n-q))^p:6"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:3 Logarithms/3.1.3 (d+e x^r)^q (a+b log(c x^n))^p:9"},
+  {"reason":
+   "RUBI's condition IntegerQ[Add[q, Multiply[-1, 1, Power[2, -1]]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:3 Logarithms/3.1.4 (f x)^m (d+e x^r)^q (a+b log(c x^n))^p:15"},
+  {"reason":
+   "RUBI's condition IntegerQ[Add[q, Multiply[-1, 1, Power[2, -1]]]] forces a half-integer exponent; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:3 Logarithms/3.1.5 u (a+b log(c x^n))^p:11"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:3 Logarithms/3.5 Miscellaneous logarithms:7"},
+  {"reason":
+   "the integrand contains u^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:3 Logarithms/3.5 Miscellaneous logarithms:28"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.2 (c+d x)^m (F^(g (e+f x)))^n (a+b (F^(g (e+f x)))^n)^p:3"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.2 (c+d x)^m (F^(g (e+f x)))^n (a+b (F^(g (e+f x)))^n)^p:4"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:6"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:7"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:9"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:10"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:12"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:14"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:15"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:16"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:17"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:18"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:19"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:20"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:21"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:22"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:27"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:29"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:31"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:36"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:41"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:44"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:45"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:46"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:48"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:49"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:50"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:51"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:52"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:55"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:56"},
+  {"reason":
+   "the integrand contains G^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:57"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:62"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:63"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:64"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:65"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:66"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:69"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:70"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:71"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:72"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:74"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:75"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:77"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:78"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:79"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:80"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:86"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:87"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:88"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:2 Exponentials/2.3 Miscellaneous exponentials:89"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:1"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:2"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:3"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:4"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:5"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:6"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:8"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:2 Exponentials/2.1 (c+d x)^m (a+b (F^(g (e+f x)))^n)^p:12"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:8 Special functions/8.8 Polylogarithm function:21"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:8 Special functions/8.8 Polylogarithm function:22"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:9 Miscellaneous/9.2 Derivative integration rules:2"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id": "rubi:9 Miscellaneous/9.2 Derivative integration rules:3"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.3 Miscellaneous algebraic functions:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.3 Miscellaneous algebraic functions:38"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.3 Miscellaneous algebraic functions:39"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.3 Miscellaneous algebraic functions:40"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.3 Miscellaneous algebraic functions:41"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:15"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:17"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.4 (a+b x)^m (c+d x)^n (e+f x)^p (g+h x)^q:36"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:32"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:33"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:34"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:35"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:49"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:5"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:9"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:21"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:22"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:23"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.5 (a+b x^n)^p (c+d x^n)^q (e+f x^n)^r:34"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:8"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:9"},
+  {"reason":
+   "the integrand has an exponent with denominator 6; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:10"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:27"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:28"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:30"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:31"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:32"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:33"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:34"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:35"},
+  {"reason":
+   "the integrand has an exponent with denominator 6; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:36"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.1 (a+b x^n)^p:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.4 (e x)^m (a+b x^n)^p (c+d x^n)^q:4"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.4 (e x)^m (a+b x^n)^p (c+d x^n)^q:5"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.4 (e x)^m (a+b x^n)^p (c+d x^n)^q:6"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.4 (e x)^m (a+b x^n)^p (c+d x^n)^q:7"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.4 (e x)^m (a+b x^n)^p (c+d x^n)^q:8"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:21"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:22"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:23"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:24"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:27"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:35"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:36"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:38"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:39"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:40"},
+  {"reason":
+   "the integrand has exponents with denominators 2 and 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:41"},
+  {"reason":
+   "the integrand has exponents with denominators 2 and 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.2 (c x)^m (a+b x^n)^p:42"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:20"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:21"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:22"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:23"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:28"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:31"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:32"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.3 General/1.1.3.3 (a+b x^n)^p (c+d x^n)^q:33"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:68"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:119"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:120"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:123"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:124"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.6 (g+h x)^m (a+b x+c x^2)^p (d+e x+f x^2)^q:11"},
+  {"reason":
+   "the integrand has an exponent with denominator 3; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.6 (g+h x)^m (a+b x+c x^2)^p (d+e x+f x^2)^q:12"},
+  {"reason":
+   "the integrand has an exponent with denominator 4; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:1"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.6 Miscellaneous inverse sine:20"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.6 Miscellaneous inverse sine:21"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.6 Miscellaneous inverse sine:22"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.6 Miscellaneous inverse sine:34"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.6 Miscellaneous inverse sine:35"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.3 (d+e x^2)^p (a+b arcsin(c x))^n:9"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.1 Inverse sine/5.1.3 (d+e x^2)^p (a+b arcsin(c x))^n:10"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.4 u (a+b arctan(c x))^p:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.4 u (a+b arctan(c x))^p:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.4 u (a+b arctan(c x))^p:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.4 u (a+b arctan(c x))^p:30"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.7 Miscellaneous inverse tangent:7"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.7 Miscellaneous inverse tangent:8"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.7 Miscellaneous inverse tangent:9"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.3 Inverse tangent/5.3.7 Miscellaneous inverse tangent:10"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.5 Inverse secant/5.5.2 Miscellaneous inverse secant:17"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:5 Inverse trig functions/5.5 Inverse secant/5.5.2 Miscellaneous inverse secant:18"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:35"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:63"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:64"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:73"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:78"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.2 (d sec)^n (a+b sec)^m:82"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:6"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:7"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:8"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:21"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:22"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:30"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:37"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:45"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:46"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.5 Secant/4.5.1.1 (a+b sec)^n:15"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.1.2 (g cos)^p (a+b sin)^m:19"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):23"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):24"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):25"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:38"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:61"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:62"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:64"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:65"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:67"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:68"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:71"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:87"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):27"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):28"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):29"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):30"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):31"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):32"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.3.1 (a+b sin)^m (c+d sin)^n (A+B sin):33"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.0.2 (a trg)^m (b tan)^n:5"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.6 (a+b cos+c sin)^n:13"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:3"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:4"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:7"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:8"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:9"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:10"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:11"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:12"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:15"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:16"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:19"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:20"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:21"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:22"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:23"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:24"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:25"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:28"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:29"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:30"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:31"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:37"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:38"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:39"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:40"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.7 F^(c (a+b x)) trig(d+e x)^n:41"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.1.2 (d sec)^m (a+b tan)^n:14"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.1.2 (d sec)^m (a+b tan)^n:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:32"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:33"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:51"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:8"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:9"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:10"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:11"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:12"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:13"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:14"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:15"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:16"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:17"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:18"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:19"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:20"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:21"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:22"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:23"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:26"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:27"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:28"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:29"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:32"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:35"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:36"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:37"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:38"},
+  {"reason":
+   "the integrand contains F^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.7 F^(c (a+b x)) hyper(d+e x)^n:39"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.1 Inverse hyperbolic sine/7.1.3 (d+e x^2)^p (a+b arcsinh(c x))^n:5"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.1 Inverse hyperbolic sine/7.1.6 Miscellaneous inverse hyperbolic sine:9"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.1 Inverse hyperbolic sine/7.1.6 Miscellaneous inverse hyperbolic sine:15"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.1 Inverse hyperbolic sine/7.1.6 Miscellaneous inverse hyperbolic sine:16"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.1 u (a+b arctanh(c x^n))^p:45"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.1 u (a+b arctanh(c x^n))^p:46"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.1 u (a+b arctanh(c x^n))^p:49"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.1 u (a+b arctanh(c x^n))^p:50"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.7 Miscellaneous inverse hyperbolic tangent:8"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.7 Miscellaneous inverse hyperbolic tangent:10"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 Miscellaneous inverse hyperbolic tangent:8"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 Miscellaneous inverse hyperbolic tangent:10"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 u (a+b arctanh(c x))^p:25"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 u (a+b arctanh(c x))^p:26"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 u (a+b arctanh(c x))^p:29"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.3 Inverse hyperbolic tangent/7.3.4 u (a+b arctanh(c x))^p:30"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.3 (d+e x^2)^p (a+b arccosh(c x))^n:10"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.3 (d+e x^2)^p (a+b arccosh(c x))^n:11"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.6 Miscellaneous inverse hyperbolic cosine:12"},
+  {"reason":
+   "the integrand has an exponent with denominator 2; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.6 Miscellaneous inverse hyperbolic cosine:13"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.6 Miscellaneous inverse hyperbolic cosine:20"},
+  {"reason":
+   "the integrand contains f^(…), a power with a non-constant exponent; the fragment interprets arith1#power for integer exponents only",
+   "legacy_id":
+   "rubi:7 Inverse hyperbolic functions/7.2 Inverse hyperbolic cosine/7.2.6 Miscellaneous inverse hyperbolic cosine:21"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.1 P(x)^p:5"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.3 Miscellaneous/1.3.2 P(x) Q(x)^p:2"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.4 Improper/1.1.4.1 (a x^j+b x^n)^p:1"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.4 Improper/1.1.4.1 (a x^j+b x^n)^p:4"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.4 Improper/1.1.4.1 (a x^j+b x^n)^p:5"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.4 Improper/1.1.4.1 (a x^j+b x^n)^p:6"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.4 Improper/1.1.4.1 (a x^j+b x^n)^p:7"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:10"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.2 (a+b x)^m (c+d x)^n:11"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.1 Binomial products/1.1.1 Linear/1.1.1.3 (a+b x)^m (c+d x)^n (e+f x)^p:15"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:15"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:16"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:17"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:21"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:22"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:23"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:24"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:25"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:26"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.2 (d+e x)^m (a+b x+c x^2)^p:47"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:9"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:10"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:11"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:14"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:15"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:16"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:17"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:22"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:23"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:28"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:29"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:32"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:33"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:34"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:35"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:55"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:56"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:57"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:58"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:59"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:60"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:98"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:99"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:100"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.1 Quadratic/1.2.1.4 (d+e x)^m (f+g x)^n (a+b x+c x^2)^p:101"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:39"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:40"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:43"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:44"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:45"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:46"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:49"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.4 (f x)^m (d+e x^2)^q (a+b x^2+c x^4)^p:50"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:2"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:3"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:5"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:19"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.3 (d+e x^2)^q (a+b x^2+c x^4)^p:20"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.2 (d x)^m (a+b x^2+c x^4)^p:3"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.2 Quartic/1.2.2.2 (d x)^m (a+b x^2+c x^4)^p:4"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.4 Improper/1.2.4.3 (d+e x^(n-q)) (a x^q+b x^n+c x^(2 n-q))^p:3"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.4 Improper/1.2.4.3 (d+e x^(n-q)) (a x^q+b x^n+c x^(2 n-q))^p:4"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:1"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:7"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:8"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:9"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:24"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.3 (d+e x^n)^q (a+b x^n+c x^(2 n))^p:25"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:45"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:46"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:49"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:50"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:51"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:52"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:55"},
+  {"reason":
+   "the conditions require q not to be an integer, and q is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:1 Algebraic functions/1.2 Trinomial products/1.2.3 General/1.2.3.4 (f x)^m (d+e x^n)^q (a+b x^n+c x^(2 n))^p:56"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.4 (d tan)^n (a+b sec)^m:22"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.4 (d tan)^n (a+b sec)^m:23"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.1.4 (d tan)^n (a+b sec)^m:24"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.9 trig^m (a+b sec^n+c sec^(2 n))^p:7"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.9 trig^m (a+b sec^n+c sec^(2 n))^p:8"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.9 trig^m (a+b sec^n+c sec^(2 n))^p:13"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.9 trig^m (a+b sec^n+c sec^(2 n))^p:14"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.10 (c+d x)^m (a+b sec)^n:10"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.1 (a+b sec)^m (A+B sec+C sec^2):24"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.1 (a+b sec)^m (A+B sec+C sec^2):25"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.1 (a+b sec)^m (A+B sec+C sec^2):26"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.1 (a+b sec)^m (A+B sec+C sec^2):27"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:44"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.1 (a+b sec)^m (c+d sec)^n:45"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.7 (d trig)^m (a+b (c sec)^n)^p:9"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.2.2 (g sec)^p (a+b sec)^m (c+d sec)^n:41"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.5 Secant/4.5.1.1 (a+b sec)^n:6"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.2 (a+b sec)^m (d sec)^n (A+B sec+C sec^2):41"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.2 (a+b sec)^m (d sec)^n (A+B sec+C sec^2):42"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.2 (a+b sec)^m (d sec)^n (A+B sec+C sec^2):43"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.5 Secant/4.5.4.2 (a+b sec)^m (d sec)^n (A+B sec+C sec^2):44"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:7"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:8"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:13"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:14"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:19"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:20"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:25"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:26"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:31"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.9 trig^m (a+b sin^n+c sin^(2 n))^p:32"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.1 (a sin)^m (b trg)^n:22"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.1 (a sin)^m (b trg)^n:23"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.3 (a csc)^m (b sec)^n:11"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):39"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):40"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):41"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.2 (a+b sin)^m (c+d sin)^n (A+B sin+C sin^2):42"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:96"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:97"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:98"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.1 (a+b sin)^m (c+d sin)^n:99"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.7 (d trig)^m (a+b (c sin)^n)^p:15"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.7 (d trig)^m (a+b (c sin)^n)^p:16"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.7 (d trig)^m (a+b (c sin)^n)^p:31"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.1.3 (g tan)^p (a+b sin)^m:7"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.1 (a+b sin)^m (A+B sin+C sin^2):16"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.1 (a+b sin)^m (A+B sin+C sin^2):17"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.1 (a+b sin)^m (A+B sin+C sin^2):18"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.4.1 (a+b sin)^m (A+B sin+C sin^2):19"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:27"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:30"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:31"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:32"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:33"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:36"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:37"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.2.3 (g sin)^p (a+b sin)^m (c+d sin)^n:38"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.2 (a trg)^m (b tan)^n:10"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.2 (a trg)^m (b tan)^n:12"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.1 Sine/4.1.0.2 (a trg)^m (b tan)^n:14"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.6 (a+b cos+c sin)^n:48"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.6 (a+b cos+c sin)^n:49"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.6 (a+b cos+c sin)^n:52"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id": "rubi:4 Trig functions/4.1 Sine/4.1.6 (a+b cos+c sin)^n:53"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:8"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:9"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:10"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:11"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:16"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:17"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:18"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:19"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:20"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:21"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:22"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:23"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:26"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:27"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:28"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:29"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:32"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:33"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:34"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:35"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:36"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:39"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:40"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:41"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:42"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:43"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:44"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:45"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:46"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:47"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:48"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.7 Miscellaneous/4.7.4 (c trig)^m (d trig)^n:49"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.1.2 (d sec)^m (a+b tan)^n:30"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.3 (g tan)^p (a+b tan)^m (c+d tan)^n:2"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.3 (g tan)^p (a+b tan)^m (c+d tan)^n:3"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.3 (g tan)^p (a+b tan)^m (c+d tan)^n:6"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.3 (g tan)^p (a+b tan)^m (c+d tan)^n:7"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.3 (g tan)^p (a+b tan)^m (c+d tan)^n:8"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.10 (c+d x)^m (a+b tan)^n:12"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.7 (d trig)^m (a+b (c tan)^n)^p:10"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:3"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:4"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:11"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:12"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:17"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:18"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:21"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.9 trig^m (a+b tan^n+c tan^(2 n))^p:22"},
+  {"reason":
+   "the conditions require m not to be an integer, and m is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:52"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:53"},
+  {"reason":
+   "the conditions require n not to be an integer, and n is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:4 Trig functions/4.3 Tangent/4.3.2.1 (a+b tan)^m (c+d tan)^n:54"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:9"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:10"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:19"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:20"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:37"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:38"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:43"},
+  {"reason":
+   "the conditions require p not to be an integer, and p is an exponent in the integrand; the fragment interprets arith1#power for integer exponents only, so the integrand is nowhere defined",
+   "legacy_id":
+   "rubi:6 Hyperbolic functions/6.7 Miscellaneous/6.7.8 u hyper(a+b log(c x^n))^p:44"}],
+ "metrics":
+ {"rules_with_findings": 2883,
+  "rules_not_migrated": 518,
+  "rules_migrated": 2884,
+  "rules_exported": 2884,
+  "real":
+  {"unsupported": 0,
+   "unproved": 815,
+   "proved": 491,
+   "counterexample": 1578,
+   "certified": 491,
+   "blocked_by_mapping_assurance": 0},
+  "julia_execution":
+  "not measured by the exporter; see OpenSymbolicRules.jl test/test_osr_v1.jl",
+  "complex":
+  {"unsupported": 0,
+   "unproved": 2206,
+   "proved": 301,
+   "counterexample": 377,
+   "certified": 157,
+   "blocked_by_mapping_assurance": 144}},
+ "build":
+ {"source_digest":
+  "sha256:9db4eb5d2897e7b49d631622ae34b82c7d02053a9fa74d1f12d77e53073cbc0b",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "lean_toolchain": "leanprover/lean4:v4.35.0"}}

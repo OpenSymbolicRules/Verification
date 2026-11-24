@@ -15,3 +15,11 @@ instance at runtime in RUBI, where evaluation and rule dispatch may simplify
 or redirect the input. The complex case is unproved. General non-integer
 powers remain outside the production interpretation, and optional defaults
 remain a matching limitation recorded in the exported findings.
+
+RUBI 2.3 #8 is similarly refuted over the reals: at `F=2`, `a=b=0`,
+`c=d=1`, the integrand is defined everywhere and the result divides by
+zero. The counterexample is checked by
+`OSR.IntegrationExpPower.rubi23r8_counterexample_real`, and the complex
+case is unproved. Runtime rule dispatch in RUBI remains untested. The
+local report covering both rules has digest
+`9db4eb5d2897e7b49d631622ae34b82c7d02053a9fa74d1f12d77e53073cbc0b`.
