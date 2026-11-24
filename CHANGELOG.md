@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `a266601e…`: four strengthened tangent recurrences are
+  proved on both interpreted domains, with three complex order mappings
+  remaining unsupported.
 - Prepare report `11f685fd…`: four negative-exponent hyperbolic recurrences
   are proved over ℝ and in the fragment's complex interpretation. Complex
   order mapping remains unsupported, so those proofs are not certified.
