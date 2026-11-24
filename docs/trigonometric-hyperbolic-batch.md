@@ -18,3 +18,10 @@ These are strengthened variants. Their original unguarded source rules remain
 separate refuted entries. Lean 4.35.0 and Mathlib revision
 `56a005855ea17e0b0958f73ec801ae140b0a1679` check the proofs. The report is
 prepared locally and has not been published.
+
+The subsequent local report
+`c3e5210412db9659fb0b629173ec1f3f83f8c83b5aee6d9adaa5ca6614fa81e8`
+also proves the strengthened recursive rules 6.1.13 #9 and #10 over ℝ and
+ℂ. Their statements verify residual-integrand definedness and quantify over
+all admissible residual primitives. The original unguarded rules remain
+separate refuted entries.

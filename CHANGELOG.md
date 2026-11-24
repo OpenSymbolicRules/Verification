@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `c3e52104…`: two recursive hyperbolic variants are proved
+  over ℝ and ℂ, including residual-integrand definedness.
 - Prepare report `503ac29d…`: eight strengthened trigonometric,
   inverse-trigonometric and hyperbolic primitives receive real proofs;
   five also receive complex proofs.
