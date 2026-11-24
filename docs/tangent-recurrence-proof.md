@@ -19,3 +19,10 @@ product rules 4.3.2.1 #3–4. All three are certified over ℝ; the two product
 rules are also certified over ℂ. The negative-power complex theorem compiles
 but remains uncertified because the complex order mapping is unsupported.
 Its integrand's definedness supplies the nonzero power base on a neighborhood.
+
+Report `bde33f4342b0c416f11487c0b1fb7e1d7044bcbfa50bc9248c19a82657cca6e3`
+adds three certified real proofs for strengthened RUBI 4.3.2.1 #7, #8 and
+#19. The complex theorems compile; #19 is certified and #7–8 remain
+uncertified due to the unsupported complex order mapping. Rule #19 explicitly
+checks both residual integrands and the denominator requirements. The
+original unguarded rules remain refuted.
