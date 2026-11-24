@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Report `59116c55…` includes 118 additional original Integration source entries and their per-domain status.
 - Report `f6aa232d…`: rebuild the exponential counterexample with the
   corrected pinned source-version description.
 - Report `cf1481f2…`: RUBI 2.3 #1 is migrated with a Lean-checked real
