@@ -33,3 +33,10 @@ adds four certified real proofs for strengthened RUBI 4.3.2.1 #20–21 and
 complex order mapping is unsupported. Negative exponents use a nonzero base
 derived from integrand definedness; nonnegative exponents also cover a zero
 base. Original unguarded rules remain refuted.
+
+Report `19edc70fb9fb2526a6b4c699b0aea47418cec273ac87594b9d87fee2e4ae8976`
+adds four certified real and complex proofs for strengthened RUBI 4.3.3.1
+#2 and #19 and 4.3.4.1 #3–4. The quadratic-factor proofs cover every integer
+exponent in the fragment, including a zero base when the exponent is
+nonnegative. Negative exponents use nonzero bases derived from integrand
+definedness. Original unguarded rules remain refuted over the reals.

@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `19edc70f…`: four strengthened tangent quotient and
+  quadratic-factor recurrences certified over ℝ and ℂ.
 - Prepare report `bdada8ff…`: four tangent recurrences proved over both
   interpreted domains, with complex order mappings unsupported.
 - Prepare report `bde33f43…`: three tangent product recurrences proved over
