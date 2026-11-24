@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `11f685fd…`: four negative-exponent hyperbolic recurrences
+  are proved over ℝ and in the fragment's complex interpretation. Complex
+  order mapping remains unsupported, so those proofs are not certified.
 - Prepare report `02d52b0a…`: four recursive hyperbolic power variants are
   proved over ℝ and in the fragment's complex interpretation. The complex
   order mapping is unsupported, so those complex proofs are not certified.

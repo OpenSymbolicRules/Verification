@@ -13,3 +13,11 @@ The registry marks this complex order mapping **unsupported**, so the four
 complex results are not OSR-certified even though their Lean statements
 compile. The four real results are certified. Lean 4.35.0 and Mathlib
 revision `56a005855ea17e0b0958f73ec801ae140b0a1679` are unchanged.
+
+The subsequent local report
+`11f685fd517a56f606d7d108f8b5870b14d51ea5262f7d863a924c3779f88ae7`
+also proves strengthened rules 6.1.13 #15–18 for negative exponents. The
+integrand's definedness enforces a nonzero base on a neighborhood; the proofs
+check all residual integrands and denominators. All four are certified over
+ℝ. Their complex theorems compile for the fragment's restricted order, but
+are not OSR-certified because the complex order mapping is unsupported.
