@@ -11,3 +11,7 @@ This is the already-distributed strengthened variant, not the original RUBI
 rule. The original remains refuted for a vanishing denominator. The Lean
 proofs use version 4.35.0 and Mathlib revision
 `56a005855ea17e0b0958f73ec801ae140b0a1679`.
+
+The local report `e6a1bb73c6b0b14f60aa6611c97a2a6e6d764291a64970a6b6b70b276cdb96f4`
+also proves the strengthened RUBI 4.1.1.1 #6 primitive for `sin(c+d x)`
+over ℝ and ℂ under `d ≠ 0`. Its original unguarded rule remains refuted.
