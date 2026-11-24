@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Prepare report `7bf0b2e9…`: the strengthened RUBI 4.1.1.1 #11 sine-square
+  primitive is proved over ℝ and ℂ under `d ≠ 0`.
 - Prepare report `9db4eb5d…`: RUBI 2.3 #8 has a Lean-checked real
   counterexample with its original conditions; the complex case is unproved.
 - Report `f6aa232d…`: rebuild the exponential counterexample with the
