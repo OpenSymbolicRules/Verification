@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Report `f5ecf169…`: the authored Algebra rule `algebra.root.sqrt_sq_nonneg`
+  (proved over ℝ; 21 Algebra rules) and 2 more proved Integration variants
+  (552 proved over ℝ, 740 unproved).
 - Report `bf4bc858…`: 12 more strengthened Integration variants are proved
   (742 remain unproved); 3015 rules, 550 proved over ℝ and 306 over ℂ.
 - Report `a8c03095…`: 14 more strengthened Integration variants are proved
