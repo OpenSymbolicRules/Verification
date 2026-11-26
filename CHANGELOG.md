@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Report `5f00452c…`: 6 more strengthened Integration variants are proved
+  (734 remain unproved); 3015 rules, 558 proved over ℝ and 306 over ℂ.
 - Report `8eb8f276…`: `arith1#abs` is registered and Algebra gains three
   authored square-root rules (24 rules, all proved over ℝ).
 - Report `f5ecf169…`: the authored Algebra rule `algebra.root.sqrt_sq_nonneg`
