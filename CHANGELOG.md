@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pinned source declares 4.17.3.0; the v0.1 4.16.1 label is historical.
 
 ### Added
+- Report `9ec04d58…`: 36 more strengthened Integration variants are proved,
+  12 of them over ℂ as well (556 remain unproved); 3015 rules, 736 proved over
+  ℝ and 360 over ℂ.
 - Report `b16db6c6…`: 9 more strengthened Integration variants are proved,
   8 of them over ℂ as well (592 remain unproved); 3015 rules, 700 proved over
   ℝ and 348 over ℂ.
