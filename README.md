@@ -838,7 +838,7 @@ Requirements: [elan](https://github.com/leanprover/elan),
 ```bash
 git clone https://github.com/OpenSymbolicRules/Lean
 # check out the commit whose scripts/source-digest.sh output matches the report
-just recheck ../Lean reports/b88763adfcc0e00124fc72930cdafc457ca28782405f38e5da89c4f8cb8427d2
+just recheck ../Lean reports/1cef1f55619e648f303f12e860f954e4a67d5746ae57b498fb2b82d30a34b295
 ```
 
 The script stops at the first mismatch: source digest, kernel replay, axiom
